@@ -1,0 +1,77 @@
+/* _navbar.scss */
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: $dark-color;
+    color: #fff;
+
+    &-brand {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($dark-color, 15%);
+            text-decoration: none;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: lighten($dark-color, 15%);
+                text-decoration: none;
+            }
+        }
+
+        .nav-item {
+            margin-left: 1rem;
+        }
+    }
+
+    &-toggle {
+        display: none;
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: lighten($dark-color, 15%);
+        }
+
+        &.collapsed+.navbar-nav {
+            display: none;
+        }
+    }
+
+    &-expand {
+        @include media-breakpoint-up(md) {
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-nav {
+                display: flex;
+            }
+        }
+    }
+}

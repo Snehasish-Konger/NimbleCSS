@@ -1,0 +1,19 @@
+/* _visibility.scss */
+
+/* Visibility Utilities */
+.visible {
+    visibility: visible !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+/* Display and Visibility Utility */
+.hidden {
+    display: none !important;
+}
+
+.block {
+    display: block !important;
+}

@@ -1,0 +1,49 @@
+/* _spacing.scss */
+
+/* Spacing Utilities */
+@mixin generate-spacing-classes($property, $variations) {
+    @each $size, $value in $variations {
+        .#{$property}-#{$size} {
+            #{$property}: #{$value} !important;
+        }
+    }
+}
+
+/* Margin Utilities */
+$spacing-scale: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3
+);
+
+@include generate-spacing-classes(m, $spacing-scale);
+@include generate-spacing-classes(mt, $spacing-scale);
+/* Margin-top */
+@include generate-spacing-classes(mb, $spacing-scale);
+/* Margin-bottom */
+@include generate-spacing-classes(ml, $spacing-scale);
+/* Margin-left */
+@include generate-spacing-classes(mr, $spacing-scale);
+/* Margin-right */
+@include generate-spacing-classes(mx, $spacing-scale);
+/* Margin-x-axis */
+@include generate-spacing-classes(my, $spacing-scale);
+/* Margin-y-axis */
+
+/* Padding Utilities */
+@include generate-spacing-classes(p, $spacing-scale);
+@include generate-spacing-classes(pt, $spacing-scale);
+/* Padding-top */
+@include generate-spacing-classes(pb, $spacing-scale);
+/* Padding-bottom */
+@include generate-spacing-classes(pl, $spacing-scale);
+/* Padding-left */
+@include generate-spacing-classes(pr, $spacing-scale);
+/* Padding-right */
+@include generate-spacing-classes(px, $spacing-scale);
+/* Padding-x-axis */
+@include generate-spacing-classes(py, $spacing-scale);
+/* Padding-y-axis */

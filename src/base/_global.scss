@@ -1,0 +1,37 @@
+/* _global.scss */
+
+/* Body Background */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Default Link Styles */
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($primary-color, 10%);
+        text-decoration: underline;
+    }
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+/* Utility classes for text alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}

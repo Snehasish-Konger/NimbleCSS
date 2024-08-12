@@ -1,0 +1,50 @@
+/* _typography.scss */
+
+/* Font Family */
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+html {
+    font-size: 100%;
+    /* 1rem = 16px */
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}

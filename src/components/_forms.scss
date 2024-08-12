@@ -1,0 +1,72 @@
+/* _forms.scss */
+
+/* Base Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: $border-radius;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: $primary-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+    }
+
+    &[disabled],
+    &[readonly] {
+        background-color: #e9ecef;
+        opacity: 1;
+    }
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.5rem;
+
+    .form-check-input {
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: -1.5rem;
+
+        &:checked~.form-check-label {
+            color: $primary-color;
+        }
+
+        &:focus {
+            border-color: $primary-color;
+            box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+        }
+    }
+
+    .form-check-label {
+        margin-bottom: 0;
+    }
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}

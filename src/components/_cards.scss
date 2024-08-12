@@ -1,0 +1,76 @@
+/* _cards.scss */
+
+/* Card Container */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &-header {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-bottom: 1px solid #ddd;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    &-body {
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+
+    &-footer {
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-top: 1px solid #ddd;
+    }
+
+    &-img-top {
+        width: 100%;
+        border-top-left-radius: calc($border-radius - 1px);
+        border-top-right-radius: calc($border-radius - 1px);
+    }
+
+    &-img-bottom {
+        width: 100%;
+        border-bottom-left-radius: calc($border-radius - 1px);
+        border-bottom-right-radius: calc($border-radius - 1px);
+    }
+}
+
+/* Card Variants */
+.card-primary {
+    border-color: $primary-color;
+
+    .card-header {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    .card-footer {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.card-secondary {
+    border-color: $secondary-color;
+
+    .card-header {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+
+    .card-footer {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}

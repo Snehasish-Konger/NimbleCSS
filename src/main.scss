@@ -1,0 +1,28 @@
+/* main.scss */
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/global';
+
+/* Import components and utilities */
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/navbar';
+@import 'components/forms';
+@import 'components/modals';
+@import 'components/alerts';
+
+@import 'layout/grid';
+@import 'layout/spacing';
+@import 'layout/containers';
+@import 'layout/flex';
+
+@import 'utilities/colors';
+@import 'utilities/display';
+@import 'utilities/visibility';
+@import 'utilities/sizing';
+@import 'utilities/text';
+@import 'utilities/borders';
+@import 'utilities/shadows';
