@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../components/_modal.scss'; // Importing SCSS for modal styles
+import '../components/_modals.scss'; // Importing SCSS for modal styles
 
 const ModalHeader = ({ children, ...props }) => {
     return (

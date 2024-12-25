@@ -183,7 +183,74 @@
         <div class="alert alert-light">This is a light alert</div>
         <div class="alert alert-dark">This is a dark alert</div>
       </section>
-
+      <!--Tabs-->
+      <section id="tabs" class="my-5">
+        <h2 class="text-center mb-4">Tabs</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#contact"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <p class="p-3">This is the Home tab content.</p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <p class="p-3">This is the Profile tab content.</p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <p class="p-3">This is the Contact tab content.</p>
+          </div>
+        </div>
+      </section>
       <!-- Tables -->
       <section id="tables" class="my-5">
         <h2 class="text-center mb-4">Tables</h2>
@@ -217,6 +284,63 @@
             </tr>
           </tbody>
         </table>
+      </section>
+      <!--Toasts-->
+      <section id="toasts" class="my-5">
+        <h2 class="text-center mb-4">Toasts</h2>
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+          <div
+            class="toast show"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <img
+                src="https://via.placeholder.com/20"
+                class="rounded me-2"
+                alt="..."
+              />
+              <strong class="me-auto">NimbleCSS</strong>
+              <small>11 mins ago</small>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">
+              This is a toast message with NimbleCSS.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tooltips -->
+      <div
+        class="tooltip-wrapper d-inline-block m-3"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Custom Tooltip"
+      >
+        <button class="btn btn-primary">Hover me</button>
+      </div>
+      <!--Sidebar-->
+      <section id="sidebar" class="my-5">
+        <h2 class="text-center mb-4">Sidebar</h2>
+        <div class="d-flex">
+          <div class="sidebar bg-dark text-white p-3">
+            <h5>Sidebar Content</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Item 1</a></li>
+              <li><a href="#" class="text-white">Item 2</a></li>
+              <li><a href="#" class="text-white">Item 3</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow-1 p-3">
+            <p>This is the main content area beside the sidebar.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Pagination -->
@@ -475,30 +599,14 @@
       <section id="spinners" class="my-5">
         <h2 class="text-center mb-4">Spinners</h2>
         <div class="text-center">
-          <div class="spinner-border text-primary m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-secondary m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-success m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-danger m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-warning m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-info m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-light m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-border text-dark m-2" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
+          <div class="spinner-border text-primary m-2" role="status"></div>
+          <div class="spinner-border text-secondary m-2" role="status"></div>
+          <div class="spinner-border text-success m-2" role="status"></div>
+          <div class="spinner-border text-danger m-2" role="status"></div>
+          <div class="spinner-border text-warning m-2" role="status"></div>
+          <div class="spinner-border text-info m-2" role="status"></div>
+          <div class="spinner-border text-light m-2" role="status"></div>
+          <div class="spinner-border text-dark m-2" role="status"></div>
         </div>
       </section>
     </main>
@@ -526,6 +634,26 @@
             modalElement.querySelector("input").focus();
           });
         }
+      });
+      // Initialize Toasts
+      document.querySelectorAll(".toast").forEach((toastEl) => {
+        new bootstrap.Toast(toastEl, { autohide: false }).show();
+      });
+
+      // Initialize Tabs
+      document.querySelectorAll('[data-toggle="tab"]').forEach((tabEl) => {
+        tabEl.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = tabEl.getAttribute("href").substring(1);
+          document
+            .querySelectorAll(".tab-pane")
+            .forEach((pane) => pane.classList.remove("show", "active"));
+          document.getElementById(targetId).classList.add("show", "active");
+          tabEl.parentElement
+            .querySelectorAll(".nav-link")
+            .forEach((link) => link.classList.remove("active"));
+          tabEl.classList.add("active");
+        });
       });
     </script>
   </body>
