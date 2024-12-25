@@ -1,0 +1,17 @@
+/* _cards-deck.scss */
+
+/* Card Deck Styles */
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+
+    .card {
+        flex: 1 1 auto;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* _toast-body.scss */
+
+/* Toast Body Styles */
+.toast-body {
+    padding: 1rem;
+    color: $light-color;
+    background-color: $dark-color;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}

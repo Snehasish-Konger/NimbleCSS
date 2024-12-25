@@ -1,24 +1,64 @@
 /* main.scss */
 
+/* Import Base Styles */
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/global';
 
-/* Import components and utilities */
+/* Import Components */
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/navbar';
 @import 'components/forms';
 @import 'components/modals';
 @import 'components/alerts';
+@import 'components/tables';
+@import 'components/breadcrumbs';
+@import 'components/pagination';
+@import 'components/badges';
+@import 'components/list-groups';
+@import 'components/dropdowns';
+@import 'components/progress';
+@import 'components/tooltips';
+@import 'components/popovers';
+@import 'components/jumbotrons';
+@import 'components/carousels';
+@import 'components/media';
+@import 'components/tabs';
+@import 'components/collapse';
+@import 'components/spinners';
+@import 'components/avatars';
+@import 'components/cards-deck';
+@import 'components/carousel-captions';
+@import 'components/close';
+@import 'components/collapse';
+@import 'components/dropdown-buttons';
+@import 'components/footer';
+@import 'components/headers';
+@import 'components/list-items';
+@import 'components/media-object';
+@import 'components/navbar-toggler';
+@import 'components/overlay';
+@import 'components/progress-animated';
+@import 'components/progress-striped';
+@import 'components/ribbon';
+@import 'components/sidebar';
+@import 'components/toast';
+@import 'components/toast-header';
+@import 'components/toast-body';
+@import 'components/vertical-nav';
+@import 'components/widgets';
 
+/* Import Layout */
 @import 'layout/grid';
 @import 'layout/spacing';
 @import 'layout/containers';
 @import 'layout/flex';
+@import 'layout/utilities';
 
+/* Import Utilities */
 @import 'utilities/colors';
 @import 'utilities/display';
 @import 'utilities/visibility';
@@ -26,3 +66,7 @@
 @import 'utilities/text';
 @import 'utilities/borders';
 @import 'utilities/shadows';
+@import 'utilities/z-index';
+@import 'utilities/positions';
+@import 'utilities/animations';
+@import 'utilities/opacity';

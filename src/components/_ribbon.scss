@@ -1,0 +1,47 @@
+/* _ribbon.scss */
+
+/* Ribbon Styles */
+.ribbon {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: 1000;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    transform: rotate(45deg);
+
+    &.ribbon-top-left {
+        top: 10px;
+        left: -10px;
+    }
+
+    &.ribbon-top-right {
+        top: 10px;
+        right: -10px;
+    }
+
+    &.ribbon-bottom-left {
+        bottom: 10px;
+        left: -10px;
+        top: auto;
+    }
+
+    &.ribbon-bottom-right {
+        bottom: 10px;
+        right: -10px;
+        top: auto;
+    }
+
+    span {
+        display: block;
+        width: 100px;
+        padding: 10px 0;
+        background-color: $primary-color;
+        color: $white;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+}

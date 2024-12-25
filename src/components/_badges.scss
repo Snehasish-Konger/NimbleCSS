@@ -1,0 +1,56 @@
+/* _badges.scss */
+
+/* Badge Styles */
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+
+    &.badge-pill {
+        padding-right: 0.6em;
+        padding-left: 0.6em;
+        border-radius: 10rem;
+    }
+}
+
+/* Badge Variants */
+.badge-primary {
+    background-color: $primary-color;
+}
+
+.badge-secondary {
+    background-color: $secondary-color;
+}
+
+.badge-success {
+    background-color: $success-color;
+}
+
+.badge-danger {
+    background-color: $danger-color;
+}
+
+.badge-warning {
+    background-color: $warning-color;
+}
+
+.badge-info {
+    background-color: $info-color;
+}
+
+.badge-light {
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+.badge-dark {
+    background-color: $dark-color;
+}

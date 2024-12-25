@@ -1,0 +1,16 @@
+/* _collapse.scss */
+
+/* Collapse Styles */
+.collapse {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+
+    &.collapsing {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.35s ease;
+    }
+}

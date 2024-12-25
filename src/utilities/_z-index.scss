@@ -1,0 +1,65 @@
+/* _z-index.scss */
+
+/* Z-Index Utilities */
+
+/* Default z-index values */
+$z-index-0: 0;
+$z-index-1: 1;
+$z-index-10: 10;
+$z-index-100: 100;
+$z-index-1000: 1000;
+$z-index-10000: 10000;
+
+/* Z-Index Classes */
+.z-index-0 {
+    z-index: $z-index-0 !important;
+}
+
+.z-index-1 {
+    z-index: $z-index-1 !important;
+}
+
+.z-index-10 {
+    z-index: $z-index-10 !important;
+}
+
+.z-index-100 {
+    z-index: $z-index-100 !important;
+}
+
+.z-index-1000 {
+    z-index: $z-index-1000 !important;
+}
+
+.z-index-10000 {
+    z-index: $z-index-10000 !important;
+}
+
+/* Specific z-index levels for common use cases */
+.z-index-auto {
+    z-index: auto !important;
+}
+
+.z-index-top {
+    z-index: 9999 !important;
+}
+
+.z-index-modal {
+    z-index: 1050 !important;
+}
+
+.z-index-tooltip {
+    z-index: 1070 !important;
+}
+
+.z-index-popover {
+    z-index: 1060 !important;
+}
+
+.z-index-sticky {
+    z-index: 1020 !important;
+}
+
+.z-index-fixed {
+    z-index: 1030 !important;
+}

@@ -1,0 +1,26 @@
+/* _navbar-toggler.scss */
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        background-color: $primary-color;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

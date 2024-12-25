@@ -1,0 +1,27 @@
+/* _close.scss */
+
+/* Close Button Styles */
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $dark-color;
+    text-shadow: 0 1px 0 $light-color;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $dark-color;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    &::before {
+        content: '×';
+    }
+}

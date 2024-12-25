@@ -1,0 +1,117 @@
+/* _popovers.scss */
+
+/* Popover Styles */
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: block;
+    max-width: 276px;
+    font-family: $font-family-base;
+    font-size: 0.875rem;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+    text-align: left;
+    white-space: normal;
+    background-color: $white;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: $border-radius;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.popover-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: $dark-color;
+    background-color: $light-color;
+    border-bottom: 1px solid $dark-color;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+.popover-body {
+    padding: 1rem;
+    color: $dark-color;
+    background-color: $white;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}
+
+/* Arrow */
+.popover-arrow {
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0.5rem;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        border-color: transparent;
+        border-style: solid;
+    }
+}
+
+.popover-arrow::before {
+    border-width: 0.5rem;
+}
+
+.bs-popover-top,
+.bs-popover-auto[x-placement^="top"] {
+    .popover-arrow {
+        bottom: calc(-0.5rem - 1px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .popover-arrow::before {
+        top: 0;
+        border-top-color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+.bs-popover-right,
+.bs-popover-auto[x-placement^="right"] {
+    .popover-arrow {
+        left: calc(-0.5rem - 1px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .popover-arrow::before {
+        right: 0;
+        border-right-color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+.bs-popover-bottom,
+.bs-popover-auto[x-placement^="bottom"] {
+    .popover-arrow {
+        top: calc(-0.5rem - 1px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .popover-arrow::before {
+        bottom: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+.bs-popover-left,
+.bs-popover-auto[x-placement^="left"] {
+    .popover-arrow {
+        right: calc(-0.5rem - 1px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .popover-arrow::before {
+        left: 0;
+        border-left-color: rgba(0, 0, 0, 0.25);
+    }
+}

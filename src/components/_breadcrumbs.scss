@@ -1,0 +1,29 @@
+/* _breadcrumbs.scss */
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: $light-color;
+    border-radius: $border-radius;
+
+    .breadcrumb-item {
+        &+.breadcrumb-item {
+            padding-left: 0.5rem;
+        }
+
+        &+.breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: $secondary-color;
+            content: "/";
+        }
+
+        &.active {
+            color: $primary-color;
+        }
+    }
+}

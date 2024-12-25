@@ -1,0 +1,46 @@
+/* _tabs.scss */
+
+/* Nav Tabs */
+.nav-tabs {
+    border-bottom: 1px solid $light-color;
+
+    .nav-item {
+        margin-bottom: -1px;
+
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+
+            &:hover {
+                border-color: $light-color $light-color $dark-color;
+            }
+
+            &.active {
+                color: $primary-color;
+                background-color: $white;
+                border-color: $light-color $light-color $dark-color;
+            }
+        }
+    }
+}
+
+/* Pills Tabs */
+.nav-pills {
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        border-radius: $border-radius;
+
+        &:hover {
+            background-color: $light-color;
+        }
+
+        &.active {
+            color: $white;
+            background-color: $primary-color;
+        }
+    }
+}

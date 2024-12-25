@@ -16,6 +16,9 @@ $warning-color: #ffc107;
 $info-color: #17a2b8;
 $light-color: #f8f9fa;
 $dark-color: #343a40;
+$white: #ffffff;
+$black: #000000;
+// Other variables...
 
 /* Typography */
 $base-font-size: 16px;
@@ -26,3 +29,8 @@ $body-font-color: #333;
 $border-radius: 0.25rem;
 $border-radius-lg: 0.5rem;
 $border-radius-sm: 0.125rem;
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$tooltip-inner-bg: rgba(0, 0, 0, 0.75); // or any color of your choice
+$tooltip-color: #fff;

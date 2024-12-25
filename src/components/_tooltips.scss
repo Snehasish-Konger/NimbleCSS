@@ -1,0 +1,78 @@
+/* _tooltips.scss */
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    margin: 0;
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    opacity: 0;
+
+    &.show {
+        opacity: 0.9;
+    }
+
+    &.bs-tooltip-auto[x-placement^="top"],
+    &.bs-tooltip-top {
+        .tooltip-arrow {
+            bottom: 0;
+            margin-left: -0.25rem;
+            border-width: 0.25rem 0.25rem 0;
+            border-top-color: $tooltip-inner-bg;
+        }
+    }
+
+    &.bs-tooltip-auto[x-placement^="bottom"],
+    &.bs-tooltip-bottom {
+        .tooltip-arrow {
+            top: 0;
+            margin-left: -0.25rem;
+            border-width: 0 0.25rem 0.25rem;
+            border-bottom-color: $tooltip-inner-bg;
+        }
+    }
+
+    &.bs-tooltip-auto[x-placement^="right"],
+    &.bs-tooltip-right {
+        .tooltip-arrow {
+            left: 0;
+            margin-top: -0.25rem;
+            border-width: 0.25rem 0.25rem 0.25rem 0;
+            border-right-color: $tooltip-inner-bg;
+        }
+    }
+
+    &.bs-tooltip-auto[x-placement^="left"],
+    &.bs-tooltip-left {
+        .tooltip-arrow {
+            right: 0;
+            margin-top: -0.25rem;
+            border-width: 0.25rem 0 0.25rem 0.25rem;
+            border-left-color: $tooltip-inner-bg;
+        }
+    }
+
+    .tooltip-inner {
+        max-width: 200px;
+        padding: 0.25rem 0.5rem;
+        color: $tooltip-color;
+        text-align: center;
+        background-color: $tooltip-inner-bg;
+        border-radius: $border-radius;
+    }
+}

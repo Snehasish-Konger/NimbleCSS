@@ -1,0 +1,28 @@
+/* _vertical-nav.scss */
+
+/* Vertical Navigation Styles */
+.vertical-nav {
+    width: 250px;
+    padding: 1rem;
+    background-color: $dark-color;
+    color: $white;
+
+    .nav-item {
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: $border-radius;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+
+        &.active {
+            background-color: $primary-color;
+        }
+    }
+}

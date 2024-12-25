@@ -1,0 +1,77 @@
+/* _dropdowns.scss */
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: $dark-color;
+    text-align: left;
+    list-style: none;
+    background-color: $white;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: $border-radius;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: $dark-color;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            color: $dark-color;
+            text-decoration: none;
+            background-color: $light-color;
+        }
+
+        &.active {
+            color: $white;
+            text-decoration: none;
+            background-color: $primary-color;
+        }
+
+        &.disabled {
+            color: $secondary-color;
+            pointer-events: none;
+            background-color: transparent;
+        }
+    }
+}
+
+.show>.dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Divider */
+.dropdown-divider {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown Header */
+.dropdown-header {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    color: $secondary-color;
+    white-space: nowrap;
+}

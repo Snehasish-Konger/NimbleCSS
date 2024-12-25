@@ -1,0 +1,13 @@
+/* _popover-header.scss */
+
+/* Popover Header Styles */
+.popover-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: $dark-color;
+    background-color: $light-color;
+    border-bottom: 1px solid $dark-color;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}

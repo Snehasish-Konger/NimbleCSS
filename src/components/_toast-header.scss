@@ -1,0 +1,29 @@
+/* _toast-header.scss */
+
+/* Toast Header Styles */
+.toast-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: $dark-color;
+    color: $white;
+    border-bottom: 1px solid $light-color;
+
+    .toast-title {
+        margin-right: auto;
+        font-weight: 700;
+    }
+
+    .toast-close {
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        color: $light-color;
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

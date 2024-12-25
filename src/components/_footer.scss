@@ -1,0 +1,40 @@
+/* _footer.scss */
+
+/* Footer Styles */
+.footer {
+    padding: 2rem 0;
+    background-color: $dark-color;
+    color: $light-color;
+
+    .footer-links {
+        margin-bottom: 1rem;
+
+        a {
+            color: $light-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .footer-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+    }
+
+    .footer-social {
+        margin-top: 1rem;
+
+        a {
+            color: $light-color;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

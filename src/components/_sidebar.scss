@@ -1,0 +1,35 @@
+/* _sidebar.scss */
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: $dark-color;
+    color: $white;
+    padding: 1rem;
+
+    .sidebar-header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .sidebar-links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
